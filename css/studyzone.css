@@ -1,0 +1,162 @@
+/* 
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Reenie Beanie', cursive;
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Gaegu', cursive;
+ */
+/* DEFAULT TAGS AND TEXT TAGS */
+html, body{
+  font-family: 'Gaegu',cursive;
+  color:#2F333E;
+  /* color: #222; */
+  /* color: red; */
+}
+body{
+  background-color: #F6E3C5;
+  /* background-image: url('https://studybreaks.com/wp-content/uploads/2018/05/studyblr-full-page-e1524253442938.jpg'); */
+  /* background-size: cover; */
+}
+
+a{color:red;text-decoration: none;}
+a:hover{color:#FFAA86; }
+textarea{outline: none;}
+
+/* POMODORO IDs AND CLASSES */
+#pcp{
+  /* background-color:#a1c3b2; */
+  /* padding: 0.5em; */
+}
+.pomodoro{
+  background-color: #a1adde;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 0.5em;
+  text-align: center;
+}
+.pmdr-button{ 
+  border-radius: 0px;
+  border:0px solid black;
+  text-align: center;
+  width: 20%;
+  padding: 0;
+  /* padding: 0.5em; */
+  background-color: pink;
+}
+
+.pmdr{
+  display: inline;
+  margin: auto;
+  text-align: center;
+  font-size: 16pt;
+}
+/* POST IT SECTION */
+.post-it{
+  margin: auto;
+  padding: 0;
+  /* background-color: yellow; */
+}
+.post-it-content{
+  font-size: 14pt;
+  padding: 0.47em;
+  margin-top: 0.2em;
+  /* border: 1px solid black; */
+  background-color: #FFDB4F;
+}
+
+/* MUSIC */
+#music{}
+.music{background-color: transparent}
+
+/* TODOLIST THING */
+/* #todolist form{border-bottom: 1px solid #3F3B56;} */
+#todolist input{
+  width: 93.5%;
+  text-align: center;
+  border-radius: 0px;
+  border:0px;
+  background-color: transparent;
+  padding: 0;
+  margin:auto;
+}
+#tdl-button{padding: 0;margin: 0;font-size: 14pt;border:none;border-radius: 0px;}
+.list{margin-top: 0.2em;margin-bottom: -1.2em;}
+.list div{
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.item{
+}
+.ok{
+  opacity: 0.5;
+}
+#quickmemo{}
+.quickmemo textarea {
+  overflow-x:none;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  resize: none;
+  background-color:transparent;
+  border:0px;
+  border-radius: 0px;
+  outline: 0px;
+  font-size: 20pt;
+}
+
+
+.post-it-menu{text-align: center;margin: auto;}
+.post-it-menu a{
+  color: #fff;
+  font-size: 14pt;
+  font-weight: bold;
+  /* background-image: url('https://i.pinimg.com/originals/09/2b/8e/092b8e002e1e7b3ddc6fec7cf70b1b88.jpg'); */
+  margin-right: 5px;
+  padding: 0.3em;
+  border-radius: 2px 3px 1.5px 4px;
+  background-color: #FA7343;
+  opacity: 0.7;
+}
+.post-it-menu a:hover{color:#222;opacity:0.9;border-radius: 4px 2px 3px 1.5px;}
+
+/* TEXTBOOK */
+.textbook{
+  padding: 1em;
+  margin:auto;
+}
+.textbook textarea{
+  /* margin: auto; */
+  font-size: 14pt;
+  width: 100%;
+  /* width: 514px; */
+  height: 550px;
+  resize: none;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCffgIIcTP0RK7Q-krDrAgG7-H2ZH76vNtVgdDM3KdEKckiJCd');
+  background-size: cover;
+  border:none;
+  border-radius: 0;
+}
+.textbook h2{
+  text-align: center;
+}
+
+/* #footer{
+  background-color: blue;
+  width: 100%;
+  margin: auto;
+  text-align:center;
+} */
+footer{
+  font-size: 10pt;
+  height: 30px;
+  padding-top: 0.5em;
+  background: #FFC897;
+  text-align: center;
+}

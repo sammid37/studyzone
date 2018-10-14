@@ -1,8 +1,92 @@
-<html>
-<head></head>
-<body>
-	<h1>This is my index page for studyzone</h1>
-<p>The real content will coming soon</p>
-<footer>designed by <a href="sammid37.github.io">sammid</a></footer>
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="designed by" content="Samantha Medeiros (aka sammid or sammid37)">
+		<meta name="description" content="A simple web page named StudyZone with simples and 
+		useful things like a pomodoro and a to do list widget, also with a good music 
+		playlist created by me">
+		<title>StudyZone</title>
+		<!-- CSS IMPORTS -->
+		<link rel="stylesheet" href="css/studyzone.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<!-- FONT FAMILY IMPORTS -->
+		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|East+Sea+Dokdo|Gaegu|Nanum+Pen+Script|Nunito|Reenie+Beanie" rel="stylesheet"> 
+		<!-- JS IMPORTS -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/hey.js"></script> 
+		<script src="js/pomodoro.js"></script> 
+		<script src="js/textbook.js"></script>
+		<script src="js/todolist.js"></script>
+	</head>
+	<body>
+		<header>
+			<br>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="five columns" id="pcp">
+					<br><br><br>
+					<div class="" id="music">
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/623063118&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+					</div>
+					<!-- 
+					<input type="button" class="pmdr-button" id="start" value="play" title="start" onclick="start();">
+					<input type="button" class="pmdr-button" id="pause" value="pause" title="pause" onclick="pause();" disabled>
+					<input type="button" class="pmdr-button" id="stop" value="stop" title="stop" onclick="stop();" disabled>
+					<input type="button" class="pmdr-button" id="play" value="resume" title="resume" onclick="resume();" disabled> -->
+					<div class="post-it">
+						<!-- Music -->
+						<div class="post-it-content music" id="pomodoro" style="display:none">
+							<div class="pmdr" id="Horas">00</div>
+							<div class="pmdr" id="Minutos">: 00</div>
+							<div class="pmdr" id="Segundos">: 00</div>
+							<div class="pmdr" id="Milisegundos">: 00</div>
+							<br/>
+							<button type="button" class="pmdr-button" id="start" title="start" onclick="start();">start</button>
+							<button type="button" class="pmdr-button" id="pause" title="pause" onclick="pause();">pause</button>
+							<button type="button" class="pmdr-button" id="stop" title="stop" onclick="stop()">stop</button>
+							<button type="button" class="pmdr-button" id="play" title="resume" onclick="resume();">resume</button>
+						</div>
+						<!-- To do list -->
+						<div class="post-it-content" id="todolist" style="display:none">
+							<form name="todolistform">
+								<div style="border-bottom: 1px solid #3F3B56;">
+									<input type="text" name="todolistitem" id="writetodo tdl-input" placeholder="add something to the list...">
+								 	<button type="button" name="send" id="tdl-button">+</button>
+								</div>
+							  <div class="list"></div>
+							</form>
+						</div>
+						<!-- Quick memo -->
+						<div class="post-it-content" id="quickmemo" style="display:none">
+							<div class="quickmemo">
+								<center>
+								<textarea placeholder="write a quick memo here">never forget to smile sweet heart :)</textarea></center>
+							</div>
+						</div>
+					<!-- Post it Menu -->
+					</div><br>
+					<div class="post-it-menu">
+						<a href="#" onclick="heyPomodoro()">pomodoro</a>
+						<a href="#" onclick="heyList()">to do list</a>
+						<a href="#" onclick="heyMemo()">quick memo</a>
+					</div>
+				</div>
+				<div class="seven columns" style='background-color:#FDA187'>
+					<div class="textbook">
+						<h2>StudyZone</h2>
+						<textarea name="name" rows="100" cols="53" class="u-full-width" placeholder="write something, a research, a poem... whatever you want to save"></textarea>
+						<p>If you want to save what you wrote, click on the button down bellow, but the fuction don't work yet</p>
+						<button type="button" name="button">save text</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<footer id="footer">by <a href="sammid37.github.io"><i>sammid</i></a></footer>		
+	</body>
 </html>
