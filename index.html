@@ -15,7 +15,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|East+Sea+Dokdo|Gaegu|Nanum+Pen+Script|Nunito|Reenie+Beanie" rel="stylesheet"> 
 		<!-- JS IMPORTS -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/hey.js"></script> 
 		<script src="js/pomodoro.js"></script> 
@@ -26,7 +26,7 @@
 		<header>
 			<br>
 		</header>
-		<div class="container">
+		<main class="container">
 			<div class="row">
 				<div class="five columns" id="pcp">
 					<br><br><br>
@@ -53,13 +53,13 @@
 						</div>
 						<!-- To do list -->
 						<div class="post-it-content" id="todolist" style="display:none">
-							<form name="todolistform">
-								<div style="border-bottom: 1px solid #3F3B56;">
-									<input type="text" name="todolistitem" id="writetodo tdl-input" placeholder="add something to the list...">
-								 	<button type="button" name="send" id="tdl-button">+</button>
+							<div id="todolist">
+                                <div class="list"></div>
+								<div class="newlistitem">
+                                    <input type="text" name="todolistitem" id="writetodo tdl-input" placeholder="add something to the list..." autocomplete="off">
+                                    <button type="button" name="send" id="tdl-button">+</button>
 								</div>
-							  <div class="list"></div>
-							</form>
+							</div>
 						</div>
 						<!-- Quick memo -->
 						<div class="post-it-content" id="quickmemo" style="display:none">
@@ -80,12 +80,10 @@
 					<div class="textbook">
 						<h2>StudyZone</h2>
 						<textarea name="name" rows="100" cols="53" class="u-full-width" placeholder="write something, a research, a poem... whatever you want to save"></textarea>
-						<p>If you want to save what you wrote, click on the button down bellow, but the fuction don't work yet</p>
-						<button type="button" name="button">save text</button>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 		<br>
 		<footer id="footer">by <a href="sammid37.github.io"><i>sammid</i></a></footer>		
 	</body>

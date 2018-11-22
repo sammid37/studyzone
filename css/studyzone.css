@@ -14,6 +14,9 @@ html, body{
   /* color: red; */
 }
 body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   background-color: #F6E3C5;
   /* background-image: url('https://studybreaks.com/wp-content/uploads/2018/05/studyblr-full-page-e1524253442938.jpg'); */
   /* background-size: cover; */
@@ -73,22 +76,38 @@ textarea{outline: none;}
 /* TODOLIST THING */
 /* #todolist form{border-bottom: 1px solid #3F3B56;} */
 #todolist input{
-  width: 93.5%;
   text-align: center;
   border-radius: 0px;
   border:0px;
+  padding: none;
   background-color: transparent;
-  padding: 0;
-  margin:auto;
+  margin: auto;
+  width: auto;
 }
-#tdl-button{padding: 0;margin: 0;font-size: 14pt;border:none;border-radius: 0px;}
-.list{margin-top: 0.2em;margin-bottom: -1.2em;}
+#tdl-button{
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  border:none;
+  border-radius: 0px;
+  float: left;
+}
+.list{
+  margin: 0;
+  padding: 0;
+}
 .list div{
   cursor: pointer;
   list-style: none;
   text-align: center;
   padding: 0;
   margin: 0;
+}
+.newlistitem{
+  position: relative;
+  border-bottom: 1px solid #3F3B56;
 }
 .item{
 }
@@ -138,22 +157,26 @@ textarea{outline: none;}
   /* width: 514px; */
   height: 550px;
   resize: none;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCffgIIcTP0RK7Q-krDrAgG7-H2ZH76vNtVgdDM3KdEKckiJCd');
+  background-image: url('../img/background.jpeg');
   background-size: cover;
   border:none;
   border-radius: 0;
 }
+
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 .textbook h2{
   text-align: center;
 }
 
-/* #footer{
-  background-color: blue;
-  width: 100%;
-  margin: auto;
-  text-align:center;
-} */
-footer{
+main {
+  flex: 1;
+}
+
+footer {
   font-size: 10pt;
   height: 30px;
   padding-top: 0.5em;
