@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
   $("#tdl-button").click(addListItemFromInput);
 
-  $(document).on('click', '.item', function() {
+  $('.item').click(function() {
       $(this).toggleClass("ok");
   });
 });
