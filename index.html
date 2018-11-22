@@ -15,7 +15,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|East+Sea+Dokdo|Gaegu|Nanum+Pen+Script|Nunito|Reenie+Beanie" rel="stylesheet"> 
 		<!-- JS IMPORTS -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/hey.js"></script> 
 		<script src="js/pomodoro.js"></script> 
@@ -53,13 +53,13 @@
 						</div>
 						<!-- To do list -->
 						<div class="post-it-content" id="todolist" style="display:none">
-							<form name="todolistform">
-								<div style="border-bottom: 1px solid #3F3B56;">
-									<input type="text" name="todolistitem" id="writetodo tdl-input" placeholder="add something to the list...">
-								 	<button type="button" name="send" id="tdl-button">+</button>
+							<div id="todolist">
+                                <div class="list"></div>
+								<div class="newlistitem">
+                                    <input type="text" name="todolistitem" id="writetodo tdl-input" placeholder="add something to the list..." autocomplete="off">
+                                    <button type="button" name="send" id="tdl-button">+</button>
 								</div>
-							  <div class="list"></div>
-							</form>
+							</div>
 						</div>
 						<!-- Quick memo -->
 						<div class="post-it-content" id="quickmemo" style="display:none">
