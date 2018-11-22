@@ -14,6 +14,9 @@ html, body{
   /* color: red; */
 }
 body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   background-color: #F6E3C5;
   /* background-image: url('https://studybreaks.com/wp-content/uploads/2018/05/studyblr-full-page-e1524253442938.jpg'); */
   /* background-size: cover; */
@@ -147,13 +150,11 @@ textarea{outline: none;}
   text-align: center;
 }
 
-/* #footer{
-  background-color: blue;
-  width: 100%;
-  margin: auto;
-  text-align:center;
-} */
-footer{
+main {
+  flex: 1;
+}
+
+footer {
   font-size: 10pt;
   height: 30px;
   padding-top: 0.5em;
